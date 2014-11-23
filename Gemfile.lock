@@ -40,7 +40,7 @@ GEM
     connection_pool (2.1.0)
     erubis (2.7.0)
     execjs (2.2.2)
-    gumby (0.0.5)
+    gumby-framework (0.0.1)
       jquery-rails
       modernizr-rails
     hike (1.2.3)
@@ -130,7 +130,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
-  gumby
+  gumby-framework
   jbuilder (~> 2.0)
   jquery-rails
   modernizr-rails
