@@ -29,7 +29,7 @@ gem 'mongoid'
 gem 'therubyracer'
 
 # For Gumby framework
-gem 'gumby'
+gem 'gumby-framework'
 gem 'jquery-rails'
 gem 'modernizr-rails'
 
