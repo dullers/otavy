@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :trip_details
+
   resources :tours
 
   get 'top/index'
