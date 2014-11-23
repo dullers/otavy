@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :tours
+
   get 'top/index'
 
   root to: "top#index"
