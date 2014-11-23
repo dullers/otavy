@@ -28,6 +28,11 @@ gem 'spring',        group: :development
 gem 'mongoid'
 gem 'therubyracer'
 
+# For Gumby framework
+gem 'gumby'
+gem 'jquery-rails'
+gem 'modernizr-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
