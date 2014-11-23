@@ -1,0 +1,35 @@
+<div class="row" style="margin-top: 5%">
+<div class="centered six columns" style='text-align: center'>
+<h1>Otavy</h1>
+<p style='text-align: center'>Best assistant for your trip</p>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, class: "wide email input" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password, autocomplete: "off", class: "wide input" %>
+  </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div class="field">
+      <ul>
+      <li class="field">
+      <label class="checkbox" for="check1">
+          <%= f.check_box :remember_me, {id: "check1", checked: "true"}, true, false %>
+          <span></span> Remember me
+      </label>
+      </li>
+      </ul>
+    </div>
+  <% end -%>
+
+  <div class="medium default btn">
+    <%= f.submit "Log in" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+</div>
+</div>

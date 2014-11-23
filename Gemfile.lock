@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/mongoid/moped.git
+  revision: 93e13263262ec09ffad5cbf0da19524e38a38b29
+  specs:
+    moped (2.0.2)
+      bson (~> 2.2)
+      connection_pool (~> 2.0)
+      optionable (~> 0.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -28,6 +37,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    bcrypt (3.1.9)
     bson (2.3.0)
     builder (3.2.2)
     coffee-rails (4.0.1)
@@ -38,6 +48,13 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     connection_pool (2.1.0)
+    devise (3.4.1)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      responders
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.2.2)
     gumby-framework (0.0.1)
@@ -63,13 +80,10 @@ GEM
       moped (~> 2.0.0)
       origin (~> 2.1)
       tzinfo (>= 0.3.37)
-    moped (2.0.2)
-      bson (~> 2.2)
-      connection_pool (~> 2.0)
-      optionable (~> 0.2.0)
     multi_json (1.10.1)
     optionable (0.2.0)
     origin (2.1.1)
+    orm_adapter (0.5.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -92,6 +106,8 @@ GEM
     rdoc (4.1.2)
       json (~> 1.4)
     ref (1.0.5)
+    responders (1.1.2)
+      railties (>= 3.2, < 4.2)
     sass (3.2.19)
     sass-rails (4.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -124,17 +140,22 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    warden (1.2.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  bson
   coffee-rails (~> 4.0.0)
+  devise
   gumby-framework
   jbuilder (~> 2.0)
   jquery-rails
   modernizr-rails
   mongoid
+  moped!
   rails (= 4.1.8)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

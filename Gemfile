@@ -27,11 +27,17 @@ gem 'spring',        group: :development
 # mongoid
 gem 'mongoid'
 gem 'therubyracer'
+gem "bson"
+gem "moped", github: "mongoid/moped"
 
 # For Gumby framework
 gem 'gumby-framework'
 gem 'jquery-rails'
 gem 'modernizr-rails'
+
+# For login function
+gem 'devise'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
